@@ -1,6 +1,7 @@
-.sign-in-form-container{
+.auth-form-container{
   padding-top: 96px;
 }
+
 
 .sing-in-form-header{
   display: flex;
@@ -13,20 +14,31 @@
   }
 }
 
+.sing-up-form-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 32px;
+  & .form-header-logo{
+    width: 95px;
+    margin-bottom: 16px;
+  }
+}
 
-.sign-login-form{
+.auth-form{
   & .login-form {
     max-width: 300px;
   }
   & .login-form-forgot {
     float: right;
   }
-  & .login-form-button {
+  & .auth-form-button {
     width: 100%;
   }
 }
 
-.sign-background-images{
+.auth-background-images{
   margin-top: 32px;
   background-image: url('https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMu.svg');
   background-position: center;

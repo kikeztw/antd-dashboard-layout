@@ -9,10 +9,10 @@ const { Content, Footer } = Layout;
 export default () => (
   <Layout>
     <Content>
-      <div className="sign-background-images">
+      <div className="auth-background-images">
         <Row type="flex" justify="center">
           <Col xs={22} sm={22} md={5}>
-            <div className="sign-in-form-container">
+            <div className="auth-form-container">
               <SingInHeader />
             </div>
             <SignInForm />

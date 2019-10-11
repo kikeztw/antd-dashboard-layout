@@ -1,7 +1,9 @@
 import React, { PureComponent } from 'react';
 import {
-  Form, Icon, Input, Button, Checkbox,
+  Form, Icon, Input, Button, Typography,
 } from 'antd';
+
+const { Text } = Typography;
 
 class SignInForm extends PureComponent {
   constructor(props) {
@@ -33,7 +35,7 @@ class SignInForm extends PureComponent {
             <Input
               size="large"
               prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
-              placeholder="Username"
+              placeholder="Create a username"
             />,
           )}
         </Form.Item>
@@ -45,24 +47,15 @@ class SignInForm extends PureComponent {
               size="large"
               prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
               type="password"
-              placeholder="Password"
+              placeholder="Create a password"
             />,
           )}
         </Form.Item>
         <Form.Item>
-          {getFieldDecorator('remember', {
-            valuePropName: 'checked',
-            initialValue: true,
-          })(<Checkbox>Remember me</Checkbox>)}
-          <a className="login-form-forgot" href="">
-            Forgot password
-          </a>
+          <Text type="secondary">By creating an account, you agree to the Terms of Service.</Text>
           <Button type="primary" htmlType="submit" className="auth-form-button" size="large">
-            Log in
+            Sign Up
           </Button>
-          Or
-          {' '}
-          <a href="">register now!</a>
         </Form.Item>
       </Form>
     );
